@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: aliceblue;
+            padding: 5px;
+            display: flex;
+            justify-content: space-evenly;
+            overflow: scroll;
+            padding: 10px;
+            background-image: url(bg.png);
+            background-size: cover;
+        }
+
+        .box {
+            min-width: 250px;
+            max-width: 250px;
+            min-height: 300px;
+            max-height: 300px;
+            margin: 10px;
+            background-image: url(m416.png);
+            background-size: cover;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.871);
+            padding: 5px;
+            border-radius: 25px;
+
+        }
+        .box1 {
+            min-width: 250px;
+            max-width: 250px;
+            min-height: 300px;
+            max-height: 300px;
+            margin: 10px;
+            background-image: url(kar98.png);
+            background-size: cover;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.871);
+            padding: 5px;
+            border-radius: 25px;
+        }
+        .box2 {
+            min-width: 250px;
+            max-width: 250px;
+            min-height: 300px;
+            max-height: 300px;
+            margin: 10px;
+            background-image: url(awm.png);
+            background-size: cover;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.871);
+            padding: 5px;
+            border-radius: 25px;
+        }
+
+        @media(max-width: 500px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+        .heading{
+            color:rgba(255, 255, 255, 0.778);
+            font-size: 25px;
+        }
+        .button
+        {
+            width:80px;
+            background-color: aquamarine;
+            font-size: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.723);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+           <h1 class="heading">M416</h1>
+           <forms>
+            <input type="button" value="Know more" class="button">
+           </forms>
+        </div>
+        <div class="box1">
+            <h1 class="heading">Kar98k</h1>
+            <forms>
+                <input type="button" value="Know more" class="button">
+               </forms>
+        </div>
+        <div class="box2">
+            <h1 class="heading">AWM</h1>
+            <forms>
+                <input type="button" value="Know more" class="button">
+               </forms>
+        </div>
+    </div>
+</body>
+
+</html>
